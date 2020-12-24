@@ -15,6 +15,8 @@ __ManagerSirMLD__ se poate folosi prin *include* in proiecte conform scriptului 
 ## Descriere proiect
  
  > ### Metode de programare
+ 
+ :heavy_check_mark:
 
   #### Divide Et Impera <br>
 
