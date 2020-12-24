@@ -5,8 +5,8 @@ Este o clasa care foloseste metoda Divide-Et-Impera pentru a calcula diverse. Se
 ## Folosire
 
 ManagerSirMLD se poate folosi prin include in proiecte conform scriptului C# de mai jos
-```C#
-using ManagerSirMLD.cs
+```.NET CLI
+dotnet add package ManagerSIRMLD --version 1.0.0
 ```
 
 ## Installation
