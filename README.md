@@ -6,11 +6,11 @@
 
 ## Instalare
 
-__ManagerSirMLD__ se poate folosi prin *include* in proiecte conform scriptului C# de mai jos <br>
+__ManagerSirMLD__ se poate folosi prin *include* in proiecte conform scriptului C# de mai jos :point_down:
                            
-```.NET CLI
-:point_right:  dotnet add package ManagerSIRMLD --version 1.0.0
-```
+  ```.NET CLI
+  dotnet add package ManagerSIRMLD --version 1.0.0
+   ```
 -----------------------------------------------------------------------------------------------
 ## Descriere proiect
  
