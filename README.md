@@ -1,6 +1,8 @@
 # ManagerSirMLD
 
   Este o clasa care foloseste metoda ***Divide-Et-Impera*** pentru a calcula diverse. Se furnizeaza ca o librarie .dll care poate fi folosita in alte proiecte C#
+  
+  <hr>
 
 ## Instalare
 
