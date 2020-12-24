@@ -44,7 +44,8 @@ __ManagerSirMLD__ se poate folosi prin *include* in proiecte conform scriptului 
  > ### Elemente invatate<br>
  
    <li> <b> Conceptul OOP (Object Oriented Programming - Programarea Orientata pe Obiecte)</b> <br>
-   <li> <b>Conceptul de programare Divide et Impera</b>
+   <li> <b> Conceptul de programare Divide et Impera</b><br>
+<li> <b> Lucru cu github.com </b>
 
 <hr>
 
