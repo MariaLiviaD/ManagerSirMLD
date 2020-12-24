@@ -21,20 +21,22 @@ __ManagerSirMLD__ se poate folosi prin *include* in proiecte conform scriptului 
 (Prezentare Generala)<br>
   #### Aplicatie
 
-- Crearea unei clase denumita __ManagerSirMLD__ care are urmatoarele proprietati: <br>
+:exclamation: Crearea unei clase denumita __ManagerSirMLD__ <br>
+  1. Care are urmatoarele proprietati: <br>
 
 <li>    n=numarul de elemente reale ale sirului; 
 <li>    min=elementul cu valoarea minima a sirului; 
-    max=elementul cu valoarea maxima a sirului; 
-    s[n]= sirul in sine; 
-si care are urmatoarele metode: 
-    Initializare (citire din fisier extern si evaluare proprietati initiale); 
-    Citire sir; (cu Divide-et-Impera)
-    Calculare Minim si Maxim; (cu Divide-et-Impera)
-    Evaluare erori; 
-    Cautare element in sir ordonat (cautare binara) (cu Divide-et-Impera);  
-    Ordonare sir crescator si descrescator; 
-    Evaluare stare ordonare sir; 
+ -      max=elementul cu valoarea maxima a sirului; 
+ -      s[n]= sirul in sine; 
+  <br>
+  2. Care are urmatoarele metode: 
+  - Initializare (citire din fisier extern si evaluare proprietati initiale); 
+  - Citire sir; (cu Divide-et-Impera)
+  - Calculare Minim si Maxim; (cu Divide-et-Impera)
+  -  Evaluare erori; 
+  -  Cautare element in sir ordonat (cautare binara) (cu Divide-et-Impera);  
+  -  Ordonare sir crescator si descrescator; 
+  -  Evaluare stare ordonare sir; 
 Elemente invatate:
    Conceptul OOP (Object Oriented Programming - Programarea Orientata pe Obiecte)
    Conceptul de programare Divide et Impera
