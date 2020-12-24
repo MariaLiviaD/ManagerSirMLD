@@ -1,21 +1,48 @@
 # ManagerSirMLD
 
-Este o clasa care foloseste metoda Divide-Et-Impera pentru a calcula diverse. Se furnizeaza ca o librarie .dll care poate fi folosite in alte proiecte C#
+  Este o clasa care foloseste metoda ***Divide-Et-Impera*** pentru a calcula diverse. Se furnizeaza ca o librarie .dll care poate fi folosita in alte proiecte C#
+  
+  <hr>
 
-## Installation
+## Instalare
 
-ManagerSirMLD se poate folosi prin include in proiecte conform scriptului C# de mai jos
-```.NET CLI
-dotnet add package ManagerSIRMLD --version 1.0.0
-```
+__ManagerSirMLD__ se poate folosi prin *include* in proiecte conform scriptului C# de mai jos :point_down:
+                           
+  ```.NET CLI
+  dotnet add package ManagerSIRMLD --version 1.0.0
+   ```
 -----------------------------------------------------------------------------------------------
-## Installation
+## Descriere proiect
+ 
+ > ### Metode de programare
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+  #### Divide Et Impera <br>
 
-```bash
-pip install foobar
-```
+(Prezentare Generala)<br>
+  #### Aplicatie
+
+:exclamation: Crearea unei clase denumita __ManagerSirMLD__ <br>
+  1. Care are urmatoarele proprietati: <br>
+
+   
+<li> <b> n </b> = numarul de elemente reale ale sirului; 
+<li> <b> min </b> =elementul cu valoarea minima a sirului; 
+<li> <b style> max </b> =elementul cu valoarea maxima a sirului; 
+<li> <b> s[n]__ = sirul in sine; 
+  <br>
+  2. Care are urmatoarele metode: <br>
+  - Initializare (citire din fisier extern si evaluare proprietati initiale); <br>
+  - Citire sir; (cu Divide-et-Impera)
+  - Calculare Minim si Maxim; (cu Divide-et-Impera)
+  -  Evaluare erori; 
+  -  Cautare element in sir ordonat (cautare binara) (cu Divide-et-Impera);  
+  -  Ordonare sir crescator si descrescator; 
+  -  Evaluare stare ordonare sir; 
+Elemente invatate:
+   Conceptul OOP (Object Oriented Programming - Programarea Orientata pe Obiecte)
+   Conceptul de programare Divide et Impera
+
+<hr>
 
 ## Usage
 
@@ -27,10 +54,8 @@ foobar.pluralize('goose') # returns 'geese'
 foobar.singularize('phenomena') # returns 'phenomenon'
 ```
 
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
+## Linkuri
+[Site Proiect](http://veng.ro/managersirmld/)
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)

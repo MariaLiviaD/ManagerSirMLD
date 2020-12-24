@@ -33,9 +33,9 @@ Elemente invatate:
 
 using System;
 
-namespace ManagerSirMLD
+namespace NSManagerSirMLD
 {
-    public class ManagersSirMLD
+    public class CLManagerSirMLD
     {
         public int NumarElemente; //numarul de elemente al sirului - proprietate publica accesibila a obiectului (clasei) (in tema descris ca (n))
 
