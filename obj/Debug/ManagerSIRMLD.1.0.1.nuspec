@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>ManagerSIRMLD</id>
+    <version>1.0.1</version>
+    <authors>ManagerSIRMLD</authors>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <license type="file">README.md</license>
+    <licenseUrl>https://aka.ms/deprecateLicenseUrl</licenseUrl>
+    <description>Package Description</description>
+    <repository type="GitHub" url="https://github.com/vioreld-VERTEX/ManagerSirMLD" />
+    <dependencies>
+      <group targetFramework=".NETStandard2.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\viore\Source\Repos\vioreld-VERTEX\ManagerSirMLD\bin\Debug\netstandard2.0\ManagerSIRMLD.dll" target="lib\netstandard2.0\ManagerSIRMLD.dll" />
+    <file src="C:\Users\viore\Source\Repos\vioreld-VERTEX\ManagerSirMLD\README.md" target="README.md" />
+  </files>
+</package>

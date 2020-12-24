@@ -32,6 +32,7 @@ Elemente invatate:
 */
 
 using System;
+using System.IO; //similar <iostream.h> din c++
 
 namespace NSManagerSirMLD
 {
@@ -50,9 +51,32 @@ namespace NSManagerSirMLD
             /*
              *  Fisierul este un fisier .ini care contine setarile initiale ale programului. 
              */
+            Console.WriteLine("Introduceti numarul de elemente al sirului: ");
+            NumarElemente = Convert.ToInt32(Console.ReadLine());
+            sir = new double[NumarElemente];
+            CitireSir(1,NumarElemente);
+            CalculareMinMax();
         }
 
-        public void CitireSir() // functia care citeste sirul de la tastatura. 
+        public void CitireSir(int minValue, int maxValue ) // functia care citeste sirul de la tastatura. 
+        {
+            /*
+             *  Citirea se face prin metroda Divide et Impera
+             */
+            int pozCurenta;
+            if (minValue<maxValue)
+            {
+                pozCurenta = (minValue + maxValue) / 2;
+                CitireSir(minValue, pozCurenta);
+                CitireSir(pozCurenta + 1, maxValue);
+            }
+            else
+            {
+                Console.WriteLine("Introduceti valoaarea reala a sirului: ");
+            }
+        }
+
+        private void CalculareMinMax() // functia care citeste sirul de la tastatura. 
         {
             /*
              *  Citirea se face prin metroda Divide et Impera
