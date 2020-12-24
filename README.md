@@ -28,7 +28,7 @@ __ManagerSirMLD__ se poate folosi prin *include* in proiecte conform scriptului 
 <li> <b> n </b> = numarul de elemente reale ale sirului; 
 <li> <b> min </b> =elementul cu valoarea minima a sirului; 
 <li> <b style> max </b> =elementul cu valoarea maxima a sirului; 
-<li> <b> s[n]</b>= sirul in sine; <br>
+<li> <b> s[n]</b>= sirul in sine; <br> <br>
   
    2. Care are urmatoarele metode:<br>
    
@@ -40,7 +40,7 @@ __ManagerSirMLD__ se poate folosi prin *include* in proiecte conform scriptului 
   <li> <b>  Ordonare sir crescator si descrescator; </b> <br>
   <li> <b>  Evaluare stare ordonare sir; </b>
     <br> <br>
-> ### Elemente invatate:<br>
+ > ### Elemente invatate:
     <b> Conceptul OOP (Object Oriented Programming - Programarea Orientata pe Obiecte)</b>
     <b>Conceptul de programare Divide et Impera</b>
 
