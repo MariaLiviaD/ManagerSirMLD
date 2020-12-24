@@ -11,7 +11,7 @@ dotnet add package ManagerSIRMLD --version 1.0.0
 -----------------------------------------------------------------------------------------------
 ## Descriere problema
  
-###Metode de programare 
+######Metode de programare 
 Divide Et Impera (Prezentare Generala)
 cu Aplicatie:
 Crearea unei clase denumita 
