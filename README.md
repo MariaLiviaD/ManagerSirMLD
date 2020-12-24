@@ -16,7 +16,10 @@ __ManagerSirMLD__ se poate folosi prin *include* in proiecte conform scriptului 
  
  > ### Metode de programare
 
-Divide Et Impera (Prezentare Generala)<br>cu Aplicatie:
+  #### Divide Et Impera <br>
+
+(Prezentare Generala)<br>
+  #### Aplicatie
 
 ### Crearea unei clase denumita 
 
