@@ -12,9 +12,11 @@ dotnet add package ManagerSIRMLD --version 1.0.0
 ## Descriere problema
  
 ### Metode de programare 
-Divide Et Impera (Prezentare Generala)
+
+Divide Et Impera (Prezentare Generala)<br>
 cu Aplicatie:
-Crearea unei clase denumita 
+
+### Crearea unei clase denumita 
         "ManagerSirMLD" 
 care are urmatoarele proprietati: 
     n=numarul de elemente reale ale sirului; 
