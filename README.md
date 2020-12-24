@@ -25,22 +25,23 @@ __ManagerSirMLD__ se poate folosi prin *include* in proiecte conform scriptului 
   1. Care are urmatoarele proprietati: <br>
 
    
-<li> <p style="color:red;"> n </p> = numarul de elemente reale ale sirului; 
+<li> <b> n </b> = numarul de elemente reale ale sirului; 
 <li> <b> min </b> =elementul cu valoarea minima a sirului; 
 <li> <b style> max </b> =elementul cu valoarea maxima a sirului; 
 <li> <b> s[n]__ = sirul in sine; 
   <br>
-  2. Care are urmatoarele metode: <br>
-  - Initializare (citire din fisier extern si evaluare proprietati initiale); <br>
-  - Citire sir; (cu Divide-et-Impera)
-  - Calculare Minim si Maxim; (cu Divide-et-Impera)
-  -  Evaluare erori; 
-  -  Cautare element in sir ordonat (cautare binara) (cu Divide-et-Impera);  
-  -  Ordonare sir crescator si descrescator; 
-  -  Evaluare stare ordonare sir; 
-Elemente invatate:
-   Conceptul OOP (Object Oriented Programming - Programarea Orientata pe Obiecte)
-   Conceptul de programare Divide et Impera
+    2. Care are urmatoarele metode: <br>
+  <li> <b> Initializare </b> (citire din fisier extern si evaluare proprietati initiale); <br>
+  <li> <b> Citire sir </b> (cu Divide-et-Impera); <br>
+  <li>  Calculare <b> Minim </b> si <b> Maxim </b> (cu Divide-et-Impera); <br>
+  <li> <b> Evaluare erori; </b> <br>
+  <li> <b> Cautare element in sir ordonat </b> (cautare binara) (cu Divide-et-Impera); <br> 
+  <li> <b>  Ordonare sir crescator si descrescator; </b> <br>
+  <li> <b>  Evaluare stare ordonare sir; </b>
+    <br> <br>
+> ### Elemente invatate:<br>
+    <b> Conceptul OOP (Object Oriented Programming - Programarea Orientata pe Obiecte)</b>
+    <b>Conceptul de programare Divide et Impera</b>
 
 <hr>
 
@@ -54,7 +55,7 @@ foobar.pluralize('goose') # returns 'geese'
 foobar.singularize('phenomena') # returns 'phenomenon'
 ```
 
-## Linkuri
+## Link-uri
 [Site Proiect](http://veng.ro/managersirmld/)
 
 ## License
