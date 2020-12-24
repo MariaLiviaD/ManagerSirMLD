@@ -51,12 +51,9 @@ __ManagerSirMLD__ se poate folosi prin *include* in proiecte conform scriptului 
 
 ## Usage
 
-```python
-import foobar
-
-foobar.pluralize('word') # returns 'words'
-foobar.pluralize('goose') # returns 'geese'
-foobar.singularize('phenomena') # returns 'phenomenon'
+```C#
+using ManagerSirMLD; // folosirea namespace-ului si a clasei create
+var SirMLD = new ManagersSirMLD(); //instantierea obiectului.
 ```
 
 ## Link-uri
