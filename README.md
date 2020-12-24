@@ -28,12 +28,10 @@ __ManagerSirMLD__ se poate folosi prin *include* in proiecte conform scriptului 
 <li> <b> n </b> = numarul de elemente reale ale sirului; 
 <li> <b> min </b> =elementul cu valoarea minima a sirului; 
 <li> <b style> max </b> =elementul cu valoarea maxima a sirului; 
-<li> <b> s[n]</b>= sirul in sine; 
-  <br>
+<li> <b> s[n]</b>= sirul in sine; <br>
   
-   2. Care are urmatoarele metode:
-    
-  <br>
+   2. Care are urmatoarele metode:<br>
+   
   <li> <b> Initializare </b> (citire din fisier extern si evaluare proprietati initiale); <br>
   <li> <b> Citire sir </b> (cu Divide-et-Impera); <br>
   <li>  Calculare <b> Minim </b> si <b> Maxim </b> (cu Divide-et-Impera); <br>
