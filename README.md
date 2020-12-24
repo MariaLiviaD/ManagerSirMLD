@@ -30,11 +30,10 @@ si care are urmatoarele metode:
     Ordonare sir crescator si descrescator; 
     Evaluare stare ordonare sir; 
 Elemente invatate:
-    *Conceptul OOP (Object Oriented Programming - Programarea Orientata pe Obiecte)
-    *Conceptul de programare Divide et Impera
-    *
------------------------------------------------------------------------------------------------
+   Conceptul OOP (Object Oriented Programming - Programarea Orientata pe Obiecte)
+   Conceptul de programare Divide et Impera
 
+<hr>
 ## Usage
 
 ```python
