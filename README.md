@@ -1,10 +1,10 @@
 # ManagerSirMLD
 
-  Este o clasa care foloseste metoda ##***Divide-Et-Impera*** pentru a calcula diverse. Se furnizeaza ca o librarie .dll care poate fi folosite in alte proiecte C#
+  Este o clasa care foloseste metoda ***Divide-Et-Impera*** pentru a calcula diverse. Se furnizeaza ca o librarie .dll care poate fi folosita in alte proiecte C#
 
 ## Instalare
 
-ManagerSirMLD se poate folosi prin include in proiecte conform scriptului C# de mai jos
+__ManagerSirMLD__ se poate folosi prin *include* in proiecte conform scriptului C# de mai jos
 ```.NET CLI
 dotnet add package ManagerSIRMLD --version 1.0.0
 ```
