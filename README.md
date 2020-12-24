@@ -33,7 +33,7 @@ Elemente invatate:
     *Conceptul OOP (Object Oriented Programming - Programarea Orientata pe Obiecte)
     *Conceptul de programare Divide et Impera
     *
-
+--------------------
 ## Usage
 
 ```python
