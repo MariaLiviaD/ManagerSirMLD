@@ -73,6 +73,8 @@ namespace NSManagerSirMLD
             else
             {
                 Console.WriteLine("Introduceti valoaarea reala a sirului: ");
+                string str = Console.ReadLine();
+                sir[minValue] = double.Parse(str);
             }
         }
 
