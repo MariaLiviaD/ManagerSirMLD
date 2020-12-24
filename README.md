@@ -41,8 +41,8 @@ __ManagerSirMLD__ se poate folosi prin *include* in proiecte conform scriptului 
   <li> <b>  Evaluare stare ordonare sir; </b>
     <br> <br>
     
- > ### Elemente invatate
- <br>
+ > ### Elemente invatate<br>
+ 
     <li> <b> Conceptul OOP (Object Oriented Programming - Programarea Orientata pe Obiecte)</b> <br>
     <li> <b>Conceptul de programare Divide et Impera</b>
 
