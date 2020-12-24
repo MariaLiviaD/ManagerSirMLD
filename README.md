@@ -19,9 +19,10 @@ Divide Et Impera (Prezentare Generala)<br>cu Aplicatie:
 
         "ManagerSirMLD" 
         
-care are urmatoarele proprietati: 
-    n=numarul de elemente reale ale sirului; 
-    min=elementul cu valoarea minima a sirului; 
+care are urmatoarele proprietati: <br>
+
+<li>    n=numarul de elemente reale ale sirului; 
+<li>    min=elementul cu valoarea minima a sirului; 
     max=elementul cu valoarea maxima a sirului; 
     s[n]= sirul in sine; 
 si care are urmatoarele metode: 
