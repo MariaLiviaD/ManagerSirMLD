@@ -10,7 +10,6 @@ dotnet add package ManagerSIRMLD --version 1.0.0
 ```
 -----------------------------------------------------------------------------------------------
 ## Descriere problema
-/*
  
 ###Metode de programare 
 Divide Et Impera (Prezentare Generala)
@@ -34,7 +33,6 @@ Elemente invatate:
     *Conceptul OOP (Object Oriented Programming - Programarea Orientata pe Obiecte)
     *Conceptul de programare Divide et Impera
     *
-*/
 
 ## Usage
 
