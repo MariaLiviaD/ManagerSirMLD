@@ -2,13 +2,13 @@
 
 Este o clasa care foloseste metoda Divide-Et-Impera pentru a calcula diverse. Se furnizeaza ca o librarie .dll care poate fi folosite in alte proiecte C#
 
-## Folosire
+## Installation
 
 ManagerSirMLD se poate folosi prin include in proiecte conform scriptului C# de mai jos
 ```.NET CLI
 dotnet add package ManagerSIRMLD --version 1.0.0
 ```
-
+-----------------------------------------------------------------------------------------------
 ## Installation
 
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
