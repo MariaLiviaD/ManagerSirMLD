@@ -74,7 +74,7 @@ namespace NSManagerSirMLD
             {
                 Console.WriteLine("Introduceti valoaarea reala a sirului: ");
                 string str = Console.ReadLine();
-                sir[minValue] = double.Parse(str);
+                sir[minValue-1] = double.Parse(str);
             }
         }
 
@@ -84,5 +84,6 @@ namespace NSManagerSirMLD
              *  Citirea se face prin metroda Divide et Impera
              */
         }
+
     }
 }
