@@ -11,9 +11,9 @@ __ManagerSirMLD__ se poate folosi prin *include* in proiecte conform scriptului 
 dotnet add package ManagerSIRMLD --version 1.0.0
 ```
 -----------------------------------------------------------------------------------------------
-## Descriere problema
+## Descriere proiect
  
-### Metode de programare 
+*** ### Metode de programare ***
 
 Divide Et Impera (Prezentare Generala)<br>cu Aplicatie:
 
