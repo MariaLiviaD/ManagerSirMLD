@@ -24,7 +24,8 @@ __ManagerSirMLD__ se poate folosi prin *include* in proiecte conform scriptului 
 :exclamation: Crearea unei clase denumita __ManagerSirMLD__ <br>
   1. Care are urmatoarele proprietati: <br>
 
-<li>    __n__ = numarul de elemente reale ale sirului; 
+<li>    
+  **n** = numarul de elemente reale ale sirului; 
 <li>    __min__ =elementul cu valoarea minima a sirului; 
  -      __max__=elementul cu valoarea maxima a sirului; 
  -      __s[n]__ = sirul in sine; 
