@@ -51,5 +51,12 @@ namespace ManagerSirMLD
              *  Fisierul este un fisier .ini care contine setarile initiale ale programului. 
              */
         }
+
+        public void CitireSir() // functia care citeste sirul de la tastatura. 
+        {
+            /*
+             *  Citirea se face prin metroda Divide et Impera
+             */
+        }
     }
 }
