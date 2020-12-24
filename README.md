@@ -34,6 +34,7 @@ Elemente invatate:
    Conceptul de programare Divide et Impera
 
 <hr>
+
 ## Usage
 
 ```python
