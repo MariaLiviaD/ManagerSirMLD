@@ -21,11 +21,7 @@ __ManagerSirMLD__ se poate folosi prin *include* in proiecte conform scriptului 
 (Prezentare Generala)<br>
   #### Aplicatie
 
-### Crearea unei clase denumita 
-
-        "ManagerSirMLD" 
-        
-care are urmatoarele proprietati: <br>
+- Crearea unei clase denumita __ManagerSirMLD__ care are urmatoarele proprietati: <br>
 
 <li>    n=numarul de elemente reale ale sirului; 
 <li>    min=elementul cu valoarea minima a sirului; 
