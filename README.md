@@ -25,7 +25,7 @@ __ManagerSirMLD__ se poate folosi prin *include* in proiecte conform scriptului 
   1. Care are urmatoarele proprietati: <br>
 
    
-<p style="color:#230EF1;"> <li> <b> n </b> = numarul de elemente reale ale sirului;</p>
+<li style="color:#230EF1;> <b> n </b> = numarul de elemente reale ale sirului;
 <li> <b> min </b> =elementul cu valoarea minima a sirului; 
 <li> <b style> max </b> =elementul cu valoarea maxima a sirului; 
 <li> <b> s[n]__ = sirul in sine; 
