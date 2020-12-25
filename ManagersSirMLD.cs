@@ -54,21 +54,22 @@ namespace NSManagerSirMLD
             Console.WriteLine("Introduceti numarul de elemente al sirului: ");
             NumarElemente = Convert.ToInt32(Console.ReadLine());
             sir = new double[NumarElemente];
-            CitireSir(1,NumarElemente);
+            CitireSirTastatura(1,NumarElemente);
             CalculareMinMax();
         }
 
-        public void CitireSir(int minValue, int maxValue ) // functia care citeste sirul de la tastatura. 
+        public void CitireSirTastatura(int minValue, int maxValue ) // functia care citeste sirul de la tastatura. 
         {
             /*
              *  Citirea se face prin metroda Divide et Impera
              */
-            int pozCurenta;
+            int pozCurenta; // pozitia curenta
+
             if (minValue<maxValue)
             {
                 pozCurenta = (minValue + maxValue) / 2;
-                CitireSir(minValue, pozCurenta);
-                CitireSir(pozCurenta + 1, maxValue);
+                CitireSirTastatura(minValue, pozCurenta);
+                CitireSirTastatura(pozCurenta + 1, maxValue);
             }
             else
             {

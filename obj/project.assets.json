@@ -184,13 +184,13 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
-    "version": "1.0.4",
+    "version": "1.0.5",
     "restore": {
-      "projectUniqueName": "C:\\Users\\viore\\Source\\Repos\\vioreld-VERTEX\\ManagerSirMLD\\ManagerSIRMLD.csproj",
+      "projectUniqueName": "C:\\Users\\viore\\source\\repos\\vioreld-VERTEX\\ManagerSirMLD\\ManagerSIRMLD.csproj",
       "projectName": "ManagerSIRMLD",
-      "projectPath": "C:\\Users\\viore\\Source\\Repos\\vioreld-VERTEX\\ManagerSirMLD\\ManagerSIRMLD.csproj",
+      "projectPath": "C:\\Users\\viore\\source\\repos\\vioreld-VERTEX\\ManagerSirMLD\\ManagerSIRMLD.csproj",
       "packagesPath": "C:\\Users\\viore\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\viore\\Source\\Repos\\vioreld-VERTEX\\ManagerSirMLD\\obj\\",
+      "outputPath": "C:\\Users\\viore\\source\\repos\\vioreld-VERTEX\\ManagerSirMLD\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",

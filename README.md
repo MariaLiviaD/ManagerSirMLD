@@ -10,14 +10,33 @@ __ManagerSirMLD__ se poate folosi prin *comanda .NET CLI* in proiecte conform sc
                            
   ```.NET CLI
   dotnet add package ManagerSIRMLD --version 1.0.4
-   ```
+  ```
 -----------------------------------------------------------------------------------------------
 ## Descriere proiect
  
  > ### Metode de programare  :heavy_check_mark:
 
-  #### Divide Et Impera <br>
+  ### Divide Et Impera <br>
   ![di](http://veng.ro/managersirmld/wp-content/uploads/sites/2/2020/12/divide.jpg "Divide Et Impera")<br>
+
+  #### Algoritmul Metodei
+
+    ```C++
+    void algoritm_divide_et_impera(p,u,sol)
+    {
+        if (p<u) 
+            {
+            imparte(p,u,poz) // determinã poziþia pivotului
+            algoritm_divide_et_impera(p, poz, sol1); // se aplicã algoritmul
+            divide_et_impera(poz+1, u, sol2); // pentru fiecare subproblemã
+            sol = combina(sol1, sol2); // formarea solutiei
+            }
+        else
+            {
+            rezolvã(sol); //rezolvã subproblema elementarã
+            }
+    }
+    ```
   #### Aplicatie
 
 :exclamation: Crearea unei clase denumita __ManagerSirMLD__ <br>
