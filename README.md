@@ -17,7 +17,7 @@ __ManagerSirMLD__ se poate folosi prin *comanda .NET CLI* in proiecte conform sc
  > ### Metode de programare  :heavy_check_mark:
 
   #### Divide Et Impera <br>
-  ![di](/http://veng.ro/managersirmld/wp-content/uploads/sites/2/2020/12/divide.jpg "Divide Et Impera")<br>
+  ![di](http://veng.ro/managersirmld/wp-content/uploads/sites/2/2020/12/divide.jpg "Divide Et Impera")<br>
   #### Aplicatie
 
 :exclamation: Crearea unei clase denumita __ManagerSirMLD__ <br>
