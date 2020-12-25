@@ -54,35 +54,56 @@ namespace NSManagerSirMLD
             Console.WriteLine("Introduceti numarul de elemente al sirului: ");
             NumarElemente = Convert.ToInt32(Console.ReadLine());
             sir = new double[NumarElemente];
-            CitireSir(1,NumarElemente);
-            CalculareMinMax();
+            CitireSirTastatura(0,NumarElemente-1);
+            ElementMinim=CalculareMin(0,NumarElemente-1);
         }
 
-        public void CitireSir(int minValue, int maxValue ) // functia care citeste sirul de la tastatura. 
+        public void CitireSirTastatura(int primul, int ultimul ) // functia care citeste sirul de la tastatura. 
         {
             /*
              *  Citirea se face prin metroda Divide et Impera
              */
-            int pozCurenta;
-            if (minValue<maxValue)
+            int pozCurenta; // pozitia curenta
+
+            if (primul<ultimul)
             {
-                pozCurenta = (minValue + maxValue) / 2;
-                CitireSir(minValue, pozCurenta);
-                CitireSir(pozCurenta + 1, maxValue);
+                pozCurenta = (primul + ultimul) / 2; //alege punctul median
+                CitireSirTastatura(primul, pozCurenta); // 
+                CitireSirTastatura(pozCurenta + 1, ultimul);
             }
             else
             {
                 Console.WriteLine("Introduceti valoaarea reala a sirului: ");
                 string str = Console.ReadLine();
-                sir[minValue-1] = double.Parse(str);
+                sir[primul] = double.Parse(str);
             }
         }
 
-        private void CalculareMinMax() // functia care citeste sirul de la tastatura. 
+        private double CalculareMin(int primul, int ultimul) // functia care calculeaza valoarea minima a sirului. 
         {
             /*
-             *  Citirea se face prin metroda Divide et Impera
+             *  Calcularea se face prin Divide et Impera = aplicatiile 1 si 2 din manualul atasat. 
              */
+            int pozCurenta;
+            double min1, min2; 
+            if (primul<ultimul)
+            {
+                pozCurenta = (primul + ultimul) / 2;
+                min1 = CalculareMin(primul, pozCurenta);
+                min2 = CalculareMin(pozCurenta + 1, ultimul);
+                if (min1<min2)
+                {
+                    return min1;
+                }
+                else
+                {
+                    return min2;
+                }
+            }
+            else
+            {
+                return sir[primul];
+            }
         }
 
     }
