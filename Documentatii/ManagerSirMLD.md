@@ -1,4 +1,4 @@
-[Back](\..\Readme.md)
+[Back](..\Readme.md)
 
 # Descrierea **Clasei ManagerSirMLD**
 
