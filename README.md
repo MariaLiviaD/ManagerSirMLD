@@ -33,7 +33,7 @@ __ManagerSirMLD__ se poate folosi prin *comanda .NET CLI* in proiecte conform sc
             }
         else
             {
-              rezolvă(sol); //rezolvă subproblema elementară
+              rezolva(sol); //rezolvă subproblema elementară
             }
     }
 ```
