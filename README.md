@@ -86,8 +86,8 @@ var SirMLD = new ManagersSirMLD(); //instantierea obiectului.
 ```
 
 ## Link-uri
-[Site Proiect](http://veng.ro/managersirmld/)
-[Descrierea Clasei](/Documentatii/ManagerSirMLD.md)
+[Site Proiect](http://veng.ro/managersirmld/)<br>
+[Descrierea Clasei](/Documentatii/ManagerSirMLD.md)<br>
 
 ## License
 [MIT](/License.md)
