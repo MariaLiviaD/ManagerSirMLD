@@ -6,7 +6,7 @@
 
 ## Instalare
 
-__ManagerSirMLD__ se poate folosi prin *include* in proiecte conform scriptului C# de mai jos :point_down:
+__ManagerSirMLD__ se poate folosi prin *comanda .NET CLI* in proiecte conform scriptului C# de mai jos :point_down:
                            
   ```.NET CLI
   dotnet add package ManagerSIRMLD --version 1.0.4
@@ -17,8 +17,7 @@ __ManagerSirMLD__ se poate folosi prin *include* in proiecte conform scriptului 
  > ### Metode de programare  :heavy_check_mark:
 
   #### Divide Et Impera <br>
-  ![Divide-et-Impera_image](
-(Prezentare Generala)<br>
+  ![di](/http://veng.ro/managersirmld/wp-content/uploads/sites/2/2020/12/divide.jpg "Divide Et Impera")<br>
   #### Aplicatie
 
 :exclamation: Crearea unei clase denumita __ManagerSirMLD__ <br>
