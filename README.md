@@ -57,7 +57,7 @@ __ManagerSirMLD__ se poate folosi prin *include* in proiecte conform scriptului 
 
 ```XML
   <ItemGroup>
-    <PackageReference Include="ManagerSIRMLD" Version="1.0.0" />
+    <PackageReference Include="ManagerSIRMLD" Version="1.0.4" />
   </ItemGroup>
 ```
 
