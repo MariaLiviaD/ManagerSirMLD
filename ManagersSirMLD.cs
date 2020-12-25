@@ -55,7 +55,7 @@ namespace NSManagerSirMLD
             NumarElemente = Convert.ToInt32(Console.ReadLine());
             sir = new double[NumarElemente];
             CitireSirTastatura(0,NumarElemente-1);
-            CalculareMin(0,NumarElemente-1);
+            ElementMinim=CalculareMin(0,NumarElemente-1);
         }
 
         public void CitireSirTastatura(int primul, int ultimul ) // functia care citeste sirul de la tastatura. 
