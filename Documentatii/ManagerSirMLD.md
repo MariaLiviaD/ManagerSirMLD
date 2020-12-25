@@ -1,8 +1,4 @@
-<table style="width:100%">
-	<tr>
-		<td href='http://www.m-w.com/dictionary/' style="cursor:pointer">Test</td>
-	</tr>
-</table>
+[Back](\..\Readme.md)
 
 # Descrierea **Clasei ManagerSirMLD**
 
