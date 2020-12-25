@@ -67,7 +67,7 @@ __ManagerSirMLD__ se poate folosi prin *comanda .NET CLI* in proiecte conform sc
    <li> <b> Lucrul cu github.com; NuGet.org </b>
    <li> <b> Intelegerea conceptului de cloud in programare </b>
    <li> <b> Familiarizare cu Visual Studio Community si conectarea la cloud </b>
-   <li> <b> Crearea unui site de prezentare pentru proiect folosind tehnologi preprogramate tip WordPress </b>
+   <li> <b> Crearea unui site de prezentare pentru proiect folosind tehnologii preprogramate tip WordPress </b>
      
 
 <hr>
