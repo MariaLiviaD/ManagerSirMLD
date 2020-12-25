@@ -9,7 +9,7 @@
 __ManagerSirMLD__ se poate folosi prin *include* in proiecte conform scriptului C# de mai jos :point_down:
                            
   ```.NET CLI
-  dotnet add package ManagerSIRMLD --version 1.0.0
+  dotnet add package ManagerSIRMLD --version 1.0.4
    ```
 -----------------------------------------------------------------------------------------------
 ## Descriere proiect
@@ -45,7 +45,11 @@ __ManagerSirMLD__ se poate folosi prin *include* in proiecte conform scriptului 
  
    <li> <b> Conceptul OOP (Object Oriented Programming - Programarea Orientata pe Obiecte)</b> <br>
    <li> <b> Conceptul de programare Divide et Impera</b><br>
-<li> <b> Lucru cu github.com </b>
+   <li> <b> Lucrul cu github.com; NuGet.org </b>
+   <li> <b> Intelegerea conceptului de cloud in programare </b>
+   <li> <b> Familiarizare cu Visual Studio Community si conectarea la cloud </b>
+   <li> <b> Crearea unui site de prezentare pentru proiect folosind tehnologi preprogramate tip WordPress </b>
+     
 
 <hr>
 
@@ -53,7 +57,7 @@ __ManagerSirMLD__ se poate folosi prin *include* in proiecte conform scriptului 
 
 ```XML
   <ItemGroup>
-    <PackageReference Include="ManagerSIRMLD" Version="1.0.0" />
+    <PackageReference Include="ManagerSIRMLD" Version="1.0.4" />
   </ItemGroup>
 ```
 
