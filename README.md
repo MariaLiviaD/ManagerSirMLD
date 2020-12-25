@@ -21,7 +21,7 @@ __ManagerSirMLD__ se poate folosi prin *comanda .NET CLI* in proiecte conform sc
 
   #### Algoritmul Metodei
 
-    ```C#
+```C#
     void algoritm_divide_et_impera(p,u,sol)
     {
         if (p<u) 
@@ -36,7 +36,8 @@ __ManagerSirMLD__ se poate folosi prin *comanda .NET CLI* in proiecte conform sc
             rezolvă(sol); //rezolvă subproblema elementară
             }
     }
-    ```
+```
+
   #### Aplicatie
 
 :exclamation: Crearea unei clase denumita __ManagerSirMLD__ <br>
