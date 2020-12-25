@@ -21,19 +21,19 @@ __ManagerSirMLD__ se poate folosi prin *comanda .NET CLI* in proiecte conform sc
 
   #### Algoritmul Metodei
 
-    ```C++
+    ```C#
     void algoritm_divide_et_impera(p,u,sol)
     {
         if (p<u) 
             {
-            imparte(p,u,poz) // determinã poziþia pivotului
-            algoritm_divide_et_impera(p, poz, sol1); // se aplicã algoritmul
-            divide_et_impera(poz+1, u, sol2); // pentru fiecare subproblemã
+            imparte(p,u,poz) // determinÄƒ poziÅ£ia pivotului
+            algoritm_divide_et_impera(p, poz, sol1); // se aplicÄƒ algoritmul
+            divide_et_impera(poz+1, u, sol2); // pentru fiecare subproblemÄƒ
             sol = combina(sol1, sol2); // formarea solutiei
             }
         else
             {
-            rezolvã(sol); //rezolvã subproblema elementarã
+            rezolvÄƒ(sol); //rezolvÄƒ subproblema elementarÄƒ
             }
     }
     ```
