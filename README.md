@@ -89,4 +89,4 @@ var SirMLD = new ManagersSirMLD(); //instantierea obiectului.
 [Site Proiect](http://veng.ro/managersirmld/)
 
 ## License
-[MIT](https://choosealicense.com/licenses/mit/)
+[MIT](/License.md)
