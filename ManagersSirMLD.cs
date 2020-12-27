@@ -46,7 +46,7 @@ namespace NSManagerSirMLD
 
         public double[] sir; // sirul de numere reale - proprietate publica accesibila a obiectului (clasei) (in tema descris ca s(n))
 
-        public int[] x; //vectorul in care voi introduce elementele vectorului sir in ordine crescatoare
+        public double[] x; //vectorul in care voi introduce elementele vectorului sir in ordine crescatoare
         public void Initializare() // functia care citeste dintr-un fisier tot datele de acolo. 
         {
             /*
@@ -147,7 +147,7 @@ namespace NSManagerSirMLD
 
         public void Interschimbare(int primul, int ultimul, int mijloc,double[]sir)
         {
-            x = new int[NumarElemente];
+            x = new double[NumarElemente];
             int i, j, k;
             i = primul;
             j = mijloc + 1;

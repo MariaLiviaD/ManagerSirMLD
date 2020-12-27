@@ -7,7 +7,7 @@
     <RepositoryUrl>https://github.com/vioreld-VERTEX/ManagerSirMLD</RepositoryUrl>
     <RepositoryType>GitHub</RepositoryType>
     <PackageLicenseFile>License.md</PackageLicenseFile>
-    <Version>1.0.7</Version>
+    <Version>1.0.8</Version>
     <OutputType>Library</OutputType>
   </PropertyGroup>
 
