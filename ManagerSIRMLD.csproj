@@ -7,7 +7,7 @@
     <RepositoryUrl>https://github.com/vioreld-VERTEX/ManagerSirMLD</RepositoryUrl>
     <RepositoryType>GitHub</RepositoryType>
     <PackageLicenseFile>License.md</PackageLicenseFile>
-    <Version>1.0.8</Version>
+    <Version>1.0.11</Version>
     <OutputType>Library</OutputType>
   </PropertyGroup>
 
@@ -16,6 +16,10 @@
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ini-parser-netstandard" Version="2.5.2" />
   </ItemGroup>
 
 </Project>
