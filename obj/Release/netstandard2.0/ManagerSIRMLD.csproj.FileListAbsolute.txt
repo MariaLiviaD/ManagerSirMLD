@@ -16,3 +16,12 @@ C:\Users\maria\source\repos\ManagerSirMLD\obj\Release\netstandard2.0\ManagerSIRM
 C:\Users\maria\source\repos\ManagerSirMLD\obj\Release\netstandard2.0\ManagerSIRMLD.csproj.CoreCompileInputs.cache
 C:\Users\maria\source\repos\ManagerSirMLD\obj\Release\netstandard2.0\ManagerSIRMLD.dll
 C:\Users\maria\source\repos\ManagerSirMLD\obj\Release\netstandard2.0\ManagerSIRMLD.pdb
+C:\Users\maria\Source\Repos\vioreld-VERTEX\ManagerSirMLD\bin\Release\netstandard2.0\ManagerSIRMLD.deps.json
+C:\Users\maria\Source\Repos\vioreld-VERTEX\ManagerSirMLD\bin\Release\netstandard2.0\ManagerSIRMLD.dll
+C:\Users\maria\Source\Repos\vioreld-VERTEX\ManagerSirMLD\bin\Release\netstandard2.0\ManagerSIRMLD.pdb
+C:\Users\maria\Source\Repos\vioreld-VERTEX\ManagerSirMLD\obj\Release\netstandard2.0\ManagerSIRMLD.csprojAssemblyReference.cache
+C:\Users\maria\Source\Repos\vioreld-VERTEX\ManagerSirMLD\obj\Release\netstandard2.0\ManagerSIRMLD.AssemblyInfoInputs.cache
+C:\Users\maria\Source\Repos\vioreld-VERTEX\ManagerSirMLD\obj\Release\netstandard2.0\ManagerSIRMLD.AssemblyInfo.cs
+C:\Users\maria\Source\Repos\vioreld-VERTEX\ManagerSirMLD\obj\Release\netstandard2.0\ManagerSIRMLD.csproj.CoreCompileInputs.cache
+C:\Users\maria\Source\Repos\vioreld-VERTEX\ManagerSirMLD\obj\Release\netstandard2.0\ManagerSIRMLD.dll
+C:\Users\maria\Source\Repos\vioreld-VERTEX\ManagerSirMLD\obj\Release\netstandard2.0\ManagerSIRMLD.pdb

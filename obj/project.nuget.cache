@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "SZrI1HXSVIt3e0JiqYg3/BlVsaXiLWnApf+nPtfckEJEfmL9fw3uGaw20oit3GW7YglykTS3EDv/6WR2r6Cc1Q==",
+  "dgSpecHash": "a5arH5JKPIVI8aNPd1rlORIxKBgmecrqqjy21HKO1WRaEw+RwwcCvsI4R2uyZlKWF9pzkMjYCup1+IjSSAi/pQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\viore\\Source\\Repos\\vioreld-VERTEX\\ManagerSirMLD\\ManagerSIRMLD.csproj",
+  "projectFilePath": "C:\\Users\\maria\\Source\\Repos\\vioreld-VERTEX\\ManagerSirMLD\\ManagerSIRMLD.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\viore\\.nuget\\packages\\ini-parser-netstandard\\2.5.2\\ini-parser-netstandard.2.5.2.nupkg.sha512",
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Users\\maria\\.nuget\\packages\\ini-parser-netstandard\\2.5.2\\ini-parser-netstandard.2.5.2.nupkg.sha512",
+    "C:\\Users\\maria\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\maria\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
   ],
   "logs": []
 }

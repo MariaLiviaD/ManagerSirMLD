@@ -34,8 +34,8 @@ Elemente invatate:
 
 using System;
 using System.IO; //similar <iostream.h> din c++
-using IniParser;
-using IniParser.Model;
+using IniParser; //biblioteca ce iti ofera posibilitatea de a lucra cu fisiera de tip .ini
+using IniParser.Model; //biblioteca ce iti ofera posibilitatea de a lucra cu fisiera de tip .ini
 
 namespace NSManagerSirMLD
 {
@@ -52,6 +52,8 @@ namespace NSManagerSirMLD
         public double[] x; //vectorul in care voi introduce elementele vectorului sir in ordine crescatoare
 
         public string CaleFisierIntrare; //calea catre fisierul de citit
+
+        public double ElementCautat; // elementul ce va fi cautat in sir
         public void Initializare() // functia care citeste dintr-un fisier tot datele de acolo. 
         {
             /*
@@ -60,15 +62,15 @@ namespace NSManagerSirMLD
             //ElementMinim = CalculareMin(0, NumarElemente - 1);
             //ElementMaxim = CalculareMax(0, NumarElemente - 1);
         }
-        public void AfiseazaElementeSir()
+        public void AfiseazaElementeSir() //functia care afiseaza elementele sirului citite din fisierul .ini
         {
-            Console.WriteLine("Numarul de elemente al sirului este: " + NumarElemente);
-            for (int i=0; i< NumarElemente; i++)
+            Console.WriteLine("Numarul de elemente al sirului este: " + NumarElemente); //mesaj ce afiseaza numarul de elemente citit din fisier
+            for (int i=0; i< NumarElemente; i++) //pentru i = 0 mai mic decat NumarElemente se afiseaza elementele sirului + pozitia acestora in sir
             {
                 Console.WriteLine("Sir["+i+"]="+ sir[i]);
             }
         }
-        public void CitireSirTastatura()
+        public void CitireSirTastatura() // functia care citeste elementele sirului de la tastatura
         {
             Console.WriteLine("Introduceti numarul de elemente al sirului: "); //scrie mesaj in consola
             NumarElemente = Convert.ToInt32(Console.ReadLine()); //transforma numarul citit si il pune in proprietatea NumarElemente
@@ -87,7 +89,7 @@ namespace NSManagerSirMLD
             if (primul < ultimul)
             {
                 pozCurenta = (primul + ultimul) / 2; //alege punctul median
-                CitireSirTastaturaDivEtImp(primul, pozCurenta); // 
+                CitireSirTastaturaDivEtImp(primul, pozCurenta); //
                 CitireSirTastaturaDivEtImp(pozCurenta + 1, ultimul);
             }
             else
@@ -104,25 +106,25 @@ namespace NSManagerSirMLD
              * folsoeste codul ini-parser din internet pentru a citi fisierele tip .ini structurate
              */
             var parser = new FileIniDataParser(); //  instantiaza obiectul Parser
-           // Console.WriteLine("Dati calea catre fisierul de initializare .ini: "); //scrie instructiune pentru introducerea fisierului la tastatura
-           CaleFisierIntrare=cale;//Console.ReadLine(); // citeste linia de la tastatura
-            
-            IniData data = parser.ReadFile(CaleFisierIntrare); // citeste datele din fisierul indicat
-            KeyDataCollection keyCol = data["Initiere Sir"]; //se uitala datele din categoria [Initiere Sir]
+            IniData data = parser.ReadFile(cale); // citeste datele din fisierul indicat
             string numar = data["Initiere Sir"]["NumarElemente"]; // citeste elementul "NumarElemente"
             string elementesir = data["Initiere Sir"]["ElementeSir"]; //citeste elementul "ElementeSir"
 
-            NumarElemente = Convert.ToInt32(numar);
-            sir = new double[NumarElemente];
+            NumarElemente = Convert.ToInt32(numar); //transformarea "numarr" ului in int in cazul in care string-ul acestura contine un caracter char
+            sir = new double[NumarElemente]; //instantierea sirului cu Numar de Elemente
 
-            string s = elementesir;
-            char[] separators = new char[] { ',' };
+            string s = elementesir; //initializam un element s de tip string cu elementesir
+            char[] separators = new char[] { ',' }; //variabila de tip char "separators" este initializata cu caracterele ce se regases in sir si vor fi indepartate
+            // pentru ca acestea sa nu fie in incluse in vectorul ce va pastra elementele sirului;
+            //sirul nostru reprezinta un text 
 
-            string[] subs = s.Split(separators, StringSplitOptions.RemoveEmptyEntries);
+            string[] subs = s.Split(separators, StringSplitOptions.RemoveEmptyEntries); // vectorul de tip string "subs" va memora "cifrele" textului nostru ce reprezinta 
+            //elementele sirului
 
-            int k = 0;
+            int k = 0; // initializam cu 0 o variabila de tip in "k" pentru exprimarea pozitiei elementelor sirului
 
-            foreach (var sub in subs)
+            foreach (var sub in subs) //pentru fiecare variabila sub din subs in vectorul nostru initial "sir" ce memoreaza elementele sirului salvam pe rand si transformam in double 
+                //( in cazul aparitiei unui caracter de tip char) elementele textului
             {
                 if (k < NumarElemente)
                 {
@@ -164,7 +166,7 @@ namespace NSManagerSirMLD
         public double CalculareMax(int primul, int ultimul) // functia care calculeaza valoarea maxima a sirului
         {
             /*
-             *   Calcularea se face prin Divide et Impera
+             *   Calcularea se face prin Divide et Impera; rezolvarea asemanatoare cu cea de la minim
              */
             int pozCurenta;
             double max1, max2;
@@ -187,78 +189,115 @@ namespace NSManagerSirMLD
                 return sir[primul];
             }
         }
-/*  Sortarea sirului prin Divide Et Impera in lucru
-        private void Sortare(int st,int dr, double[] sir)
+
+        public double CirireElementCautatSir(string cale)
         {
-            double aux;
-            if (sir[st] > sir[dr])
-            {
-                aux = sir[st];
-                sir[st] = sir[dr];
-                sir[dr] = aux;
-            }
+            double elcau;
+            var parser = new FileIniDataParser(); //  instantiaza obiectul Parser
+            IniData data = parser.ReadFile(cale); // citeste datele din fisierul indicat
+            string NrCau = data["NumarCautat"]["ElementCautat"]; // citeste elementul "ElementCautat"
+            elcau = double.Parse(NrCau); // salverea valorii "NumarCautat" si transfoermarea acestuia in double in variabila ElementCautat
+            return elcau;
         }
 
-        private void Interschimbare(int primul, int ultimul, int mijloc, double[]sir, int elem)
+
+        public bool CautareBinara(int primul, int ultimul, double elemc, double[] sir)
         {
-            var siraux = new double[elem];
-            int i, j, k;
-            i = primul;
-            j = mijloc + 1;
-            k = 1;
-            while(i<=mijloc && j<= ultimul)
+            int pozCurenta = (primul + ultimul) / 2;
+
+            if (elemc == sir[pozCurenta])
             {
-                if(sir[i] <= sir[j])
-                {
-                    siraux[k] = sir[i];
-                    i++;
-                    k++;
-                }
-                else
-                {
-                    siraux[k] = sir[j];
-                    j++;
-                    k++;
-                }
-            }
-            if(i <= mijloc)
-            {
-                for(j=i;j<= mijloc;j++)
-                {
-                    siraux[k] = sir[j];
-                    k++;
-                }
+                return true;
             }
             else
             {
-                for(i=j;j<=ultimul;j++)
+                if (primul < ultimul)
                 {
-                    siraux[k] = (int)sir[i];
-                    k++;
+                    if (elemc < sir[pozCurenta])
+                    {
+                        return CautareBinara(primul, pozCurenta - 1, elemc, sir);
+                    }
+                    else
+                    {
+                        return CautareBinara(pozCurenta + 1, ultimul, elemc, sir);
+                    }
                 }
             }
-            k = 1;
-            for(i = primul; i<= ultimul; i++)
-            {
-                sir[i] = siraux[k];
-                k++;
-            }
+            return false;
         }
 
-        public void SortareSir(int primul,int ultimul, double[] sir, int elem)
-        {
-            int mijloc;
-            if((ultimul-primul)<=1)
-            {
-                Sortare(primul, ultimul,  sir);
-            }
-            else
-            {
-                mijloc = (primul + ultimul) / 2;
-                SortareSir(primul, mijloc, sir, elem);
-                SortareSir(mijloc + 1, ultimul, sir, elem);
-                Interschimbare(primul, ultimul, mijloc, sir, elem);
-            }
-        } */
+        /*  Sortarea sirului prin Divide Et Impera in lucru
+                private void Sortare(int st,int dr, double[] sir)
+                {
+                    double aux;
+                    if (sir[st] > sir[dr])
+                    {
+                        aux = sir[st];
+                        sir[st] = sir[dr];
+                        sir[dr] = aux;
+                    }
+                }
+
+                private void Interschimbare(int primul, int ultimul, int mijloc, double[]sir, int elem)
+                {
+                    var siraux = new double[elem];
+                    int i, j, k;
+                    i = primul;
+                    j = mijloc + 1;
+                    k = 1;
+                    while(i<=mijloc && j<= ultimul)
+                    {
+                        if(sir[i] <= sir[j])
+                        {
+                            siraux[k] = sir[i];
+                            i++;
+                            k++;
+                        }
+                        else
+                        {
+                            siraux[k] = sir[j];
+                            j++;
+                            k++;
+                        }
+                    }
+                    if(i <= mijloc)
+                    {
+                        for(j=i;j<= mijloc;j++)
+                        {
+                            siraux[k] = sir[j];
+                            k++;
+                        }
+                    }
+                    else
+                    {
+                        for(i=j;j<=ultimul;j++)
+                        {
+                            siraux[k] = (int)sir[i];
+                            k++;
+                        }
+                    }
+                    k = 1;
+                    for(i = primul; i<= ultimul; i++)
+                    {
+                        sir[i] = siraux[k];
+                        k++;
+                    }
+                }
+
+                public void SortareSir(int primul,int ultimul, double[] sir, int elem)
+                {
+                    int mijloc;
+                    if((ultimul-primul)<=1)
+                    {
+                        Sortare(primul, ultimul,  sir);
+                    }
+                    else
+                    {
+                        mijloc = (primul + ultimul) / 2;
+                        SortareSir(primul, mijloc, sir, elem);
+                        SortareSir(mijloc + 1, ultimul, sir, elem);
+                        Interschimbare(primul, ultimul, mijloc, sir, elem);
+                    }
+                } */
     }
 }
