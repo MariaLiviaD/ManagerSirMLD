@@ -114,17 +114,17 @@ namespace NSManagerSirMLD
             sir = new double[NumarElemente]; //instantierea sirului cu Numar de Elemente
 
             string s = elementesir; //initializam un element s de tip string cu elementesir
-            char[] separators = new char[] { ',' }; //variabila de tip char "separators" este initializata cu caracterele ce se regases in sir si vor fi indepartate
-            // pentru ca acestea sa nu fie in incluse in vectorul ce va pastra elementele sirului;
+            char[] separators = new char[] { ',' }; //variabila de tip char "separators" este initializata cu caracterele ce se regasesc in sir si vor fi indepartate
+            // pentru ca acestea sa nu fie incluse in vectorul ce va pastra elementele sirului;
             //sirul nostru reprezinta un text 
 
             string[] subs = s.Split(separators, StringSplitOptions.RemoveEmptyEntries); // vectorul de tip string "subs" va memora "cifrele" textului nostru ce reprezinta 
             //elementele sirului
 
-            int k = 0; // initializam cu 0 o variabila de tip in "k" pentru exprimarea pozitiei elementelor sirului
+            int k = 0; // initializam cu 0 o variabila de tip int "k" pentru exprimarea pozitiei elementelor sirului
 
             foreach (var sub in subs) //pentru fiecare variabila sub din subs in vectorul nostru initial "sir" ce memoreaza elementele sirului salvam pe rand si transformam in double 
-                //( in cazul aparitiei unui caracter de tip char) elementele textului
+                //(deoarece fisierul nostru contine elementele sirului de tip string >text<) elementele textului
             {
                 if (k < NumarElemente)
                 {
@@ -190,6 +190,61 @@ namespace NSManagerSirMLD
             }
         }
 
+        public void SortareSirCrescator(double[] x, int stanga, int mijloc, int dreapta)
+        {
+            double[] sirauxiliar;
+            sirauxiliar = new double[dreapta - stanga + 1];
+            int i = stanga;
+            int j = mijloc + 1;
+            int k = 0;
+
+            while (i <= mijloc && j <= dreapta)
+            {
+                if (x[i] <= x[j])
+                {
+                    sirauxiliar[k] = x[i];
+                    k++;
+                    i++;
+                }
+                else
+                {
+                    sirauxiliar[k] = x[j];
+                    k++;
+                    j++;
+                }
+            }
+
+            while (i <= mijloc)
+            {
+                sirauxiliar[k] = x[i];
+                i++;
+                k++;
+            }
+
+            while (j <= dreapta)
+            {
+                sirauxiliar[k] = x[j];
+                j++;
+                k++;
+            }
+
+            for (i = stanga; i <= dreapta; i++)
+            {
+                x[i] = sirauxiliar[i - stanga];
+            }
+        }
+
+        public void ImpartireaSirului(double[] x, int stanga, int dreapta)
+        {
+            if (stanga < dreapta)
+            {
+                int mijloc = (stanga + dreapta) / 2;
+                ImpartireaSirului(x, stanga, mijloc);
+                ImpartireaSirului(x, mijloc + 1, dreapta);
+                SortareSirCrescator(x, stanga, mijloc, dreapta);
+            }
+        }
+
         public double CirireElementCautatSir(string cale)
         {
             double elcau;
@@ -201,11 +256,11 @@ namespace NSManagerSirMLD
         }
 
 
-        public bool CautareBinara(int primul, int ultimul, double elemc, double[] sir)
+        public bool CautareBinara(int primul, int ultimul, double elemc, double[] x)
         {
             int pozCurenta = (primul + ultimul) / 2;
 
-            if (elemc == sir[pozCurenta])
+            if (elemc == x[pozCurenta])
             {
                 return true;
             }
@@ -213,13 +268,13 @@ namespace NSManagerSirMLD
             {
                 if (primul < ultimul)
                 {
-                    if (elemc < sir[pozCurenta])
+                    if (elemc < x[pozCurenta])
                     {
-                        return CautareBinara(primul, pozCurenta - 1, elemc, sir);
+                        return CautareBinara(primul, pozCurenta - 1, elemc, x);
                     }
                     else
                     {
-                        return CautareBinara(pozCurenta + 1, ultimul, elemc, sir);
+                        return CautareBinara(pozCurenta + 1, ultimul, elemc, x);
                     }
                 }
             }
