@@ -1,0 +1,7 @@
+//documentarea pentru sortarea sirului crescator cu divide et impera(MergeSort)
+
+https://www.interviewbit.com/tutorial/merge-sort-algorithm/
+
+//intelegerea algoritmului 
+
+https://www.youtube.com/watch?v=mB5HXBb_HY8
