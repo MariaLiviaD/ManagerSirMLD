@@ -19,17 +19,15 @@ si care are urmatoarele metode:
 
     Initializare (citire din fisier extern si evaluare proprietati initiale); 
     Citire sir; (cu Divide-et-Impera)
-    >>>Citire Sire din fisier cu selectare prin windows; 
+    Citire Sir din fisier; 
     Calculare Minim si Maxim; (cu Divide-et-Impera)
-    Evaluare erori; 
     Cautare element in sir ordonat (cautare binara) (cu Divide-et-Impera);  
-    Ordonare sir crescator si descrescator; 
-    Evaluare stare ordonare sir; 
+    Ordonare sir crescator si descrescator;  
 
 Elemente invatate:
     *Conceptul OOP (Object Oriented Programming - Programarea Orientata pe Obiecte)
     *Conceptul de programare Divide et Impera
-    *
+    
 */
 
 using System;
@@ -72,7 +70,7 @@ namespace NSManagerSirMLD
             Console.WriteLine("Introduceti numarul de elemente al sirului: "); //scrie mesaj in consola pentru introducerea numarului de elemente;
             NumarElemente = Convert.ToInt32(Console.ReadLine()); //transforma numarul citit din string(deoarece noi introducem un text) in int si il salvam in NumarElemente;
             sir = new double[NumarElemente]; // la inceput am initializat "sir" ca fiind public pentru a putea acum sa ii dam marimea (punem "new double" deorece ii dam o noua
-                                             // proprietate(la inceput el era un vector gol nu avea o marime));
+                                             // "caracteristica" (la inceput el era un vector gol nu avea o marime));
             CitireSirTastaturaDivEtImp(0, NumarElemente - 1); // citeste sirul cu Divide Et Impera de la tastatura. 
         }
 
