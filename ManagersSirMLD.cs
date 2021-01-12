@@ -110,9 +110,8 @@ namespace NSManagerSirMLD
              * folsosete codul ini-parser de pe internet pentru a citi fisierele tip .ini structurate;
              * informatiile despre citire din fisier tip .ini au fost preluate de pe GitHub.com >https://github.com/rickyah/ini-parser<;
              */
-            var parser = new FileIniDataParser();  // instantiem obiectul parser ce ii atribuim proprietatea "FileIniDataParser" (proprietate a bibliotecilor folosite) 
-                                                   //pentru a putea accesa fiserul .ini;
-            IniData data = parser.ReadFile(cale); // initializam "data" de tip IniData (proprietate a bibliotecilor folosite) pentru citirea fisierului;
+            var parser = new FileIniDataParser();  // instantiem obiectul parser pentru a accesa fisierul .ini;
+            IniData data = parser.ReadFile(cale); // citim fiserul;
             string numar = data["Initiere Sir"]["NumarElemente"]; // citeste elementul "NumarElemente"
             string elementesir = data["Initiere Sir"]["ElementeSir"]; //citeste elementul "ElementeSir"
 
